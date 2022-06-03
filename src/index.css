@@ -40,7 +40,7 @@ code {
 }
 
 .outerShadow {
-  box-shadow: -5px -5px 5px 0 #fff, 5px 5px 5px 0 hsla(240, 12%, 72%, 0.4);
+  box-shadow: -5px -5px 10px 0 #fff, 5px 5px 10px 0 hsla(240, 12%, 72%, 0.4);
   transition-property: box-shadow;
   transition-duration: 300ms;
   transition-timing-function: ease-in-out;

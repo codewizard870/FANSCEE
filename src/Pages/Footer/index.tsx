@@ -1,39 +1,106 @@
 import React, { FunctionComponent, useEffect, useState } from 'react';
 import { HStack, Stack, VStack, Flex, Text, Image, Link, Center, Divider } from '@chakra-ui/react'
+import LinkList from './LinkList'
 
 const Footer: FunctionComponent = (props) => {
-  const [blockHeight, setBlockHeight] = useState(0); 
-  const [timer, setTimer] = useState(0);
-
-  useEffect( () => {
-    // async function getLatestHash() {
-    //   await lcd.tx.txInfosByHeight(undefined)
-    //   .then((e) => {
-    //     // setBlockHeight(e[0].height);
-    //   })
-    // }
-    // getLatestHash();
-    // if(timer !== 0){
-    //   window.clearInterval(timer)
-    // }
-    // let res = window.setInterval(getLatestHash, 10000);
-    // setTimer(res);
-  }, []);
-
   return (
     <Flex
-      direction={'row'}
-      px={{ sm: '10px', md:'20px', lg: '109px' }}
+      direction={'column'}
+      px={{base:'20px', lg:'190px'}}
       pt={'108px'}
       pb={'104px'}
       w={'100%'}
-      justify={'space-between'}
       align={'center'}
     >
-      <HStack spacing={'5px'}>
-        
-      </HStack>
+      <Flex
+        justify={'space-between'}
+        w='100%'
+        flexWrap={'wrap'}
+      >
+        <LinkList
+          title='Use Fanscee'
+          list={useFanscee}
+        />
+        <LinkList
+          title='Build'
+          list={build}
+        />
+        <LinkList
+          title='Ecosystem'
+          list={ecosystem}
+        />
+        <LinkList
+          title='Socials'
+          list={socials}
+        />
+      </Flex>
+      <Divider orientation='horizontal' />
     </Flex>
   );
 }
 export default Footer;
+
+const useFanscee = [ 
+  { 
+    label: "ABOUT FANSCEE",
+    href: ''
+  },
+  { 
+    label: "GET FANSCEE", 
+    href: ''
+  },
+  {
+    label: "EXPLORER", 
+    href: ''
+  },
+  {
+    label:"🌊 (1 ➝ 2)" ,
+    href: ''
+  }
+];
+const build = [ 
+  { 
+    label: "DOCUMENTATION",
+    href: ''
+  },
+  { 
+    label: "GITHUB", 
+    href: ''
+  },
+  {
+    label: "INCUBATOR", 
+    href: ''
+  },
+  {
+    label:"GRANTS" ,
+    href: ''
+  }
+];
+const ecosystem= [
+  { 
+    label: "DAO",
+    href: ''
+  },
+  { 
+    label: "CONTACT", 
+    href: ''
+  },
+  {
+    label: "LABS", 
+    href: ''
+  },
+];
+const socials= [
+  { 
+    label: "TWITTER",
+    href: ''
+  },
+  { 
+    label: "TELEGRAM", 
+    href: ''
+  },
+  {
+    label: "MEDIUM", 
+    href: ''
+  },
+];

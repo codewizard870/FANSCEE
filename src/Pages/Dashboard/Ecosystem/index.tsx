@@ -55,7 +55,7 @@ const Ecosystem: FunctionComponent = (props) => {
             textStyle='secondary'
             letterSpacing={'2.8px'}
           >
-             Explore the Waves ecosystem
+             Explore the Fanscee ecosystem
           </Text>
         </Flex>
         </Flex>
@@ -75,7 +75,7 @@ const data = [
   {
     img: './card-logo-exchange.svg',
     title: "DEX",
-    description: 'The automated market maker, based on the Waves Blockchain, which combines several types of liquidity pools for volatile assets and stablecoins.',
+    description: 'The automated market maker, based on the Fanscee Blockchain, which combines several types of liquidity pools for volatile assets and stablecoins.',
     tvl: 'TVL: $151 million'
   },
   {
@@ -93,7 +93,7 @@ const data = [
   {
     img: './card-logo-waves-ducks.svg',
     title: "NFT GAMING",
-    description: 'Waves Ducks is a game focused on collectible digital duck images in the NFT format',
+    description: 'Fanscee Ducks is a game focused on collectible digital duck images in the NFT format',
     tvl: 'TVL'
   },
   {

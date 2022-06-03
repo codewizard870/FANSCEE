@@ -4,6 +4,7 @@ import Overview from './Overview';
 import Why from './Why';
 import Today from './Today';
 import Ecosystem from './Ecosystem';
+import Start from './Start';
 
 const Dashboard: FunctionComponent = (props) => {
   return (
@@ -17,6 +18,7 @@ const Dashboard: FunctionComponent = (props) => {
       <Why />
       <Today />
       <Ecosystem />
+      <Start />
     </Flex>
   );
 }
