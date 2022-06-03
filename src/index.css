@@ -11,3 +11,41 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+@keyframes spin { 
+  100% { 
+      -webkit-transform: rotate(360deg); 
+      transform:rotate(360deg); 
+  } 
+}
+
+.innerShadow::before {
+  box-shadow: inset 0px 0px 0px  hsla(240, 12%, 72%, 0.4), inset -0px -0px 0px #fff;
+  content: "";
+  height: calc(100% - 10px);
+  left: 5px;
+  position: absolute;
+  top: 5px;
+  width: calc(100% - 10px);
+  transition-property: box-shadow;
+  transition-duration: 300ms;
+  transition-timing-function: ease-in-out;
+  border-radius: inherit;
+  border: 1px solid currentColor;
+  pointer-events: none;
+  color: transparent;
+}
+.innerShadow:hover::before{
+  box-shadow: inset 1px 1px 1px hsla(240, 12%, 72%, 0.4), inset -1px -1px 1px #fff
+}
+
+.outerShadow {
+  box-shadow: -5px -5px 5px 0 #fff, 5px 5px 5px 0 hsla(240, 12%, 72%, 0.4);
+  transition-property: box-shadow;
+  transition-duration: 300ms;
+  transition-timing-function: ease-in-out;
+}
+
+.outerShadowHover:hover {
+  box-shadow: -3px -3px 5px 0 #fff, 3px 3px 5px 0 hsla(240, 12%, 72%, 0.4);
+}

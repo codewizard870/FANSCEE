@@ -34,6 +34,10 @@ const theme = extendTheme(
           fontFamily: '"Lato","Arial","sans-serif"'
       },
     },
+    colors: {
+      primary: "rgb(0, 75, 224)",
+      gray: "#f0f0f3"
+    }
   },
 )
 

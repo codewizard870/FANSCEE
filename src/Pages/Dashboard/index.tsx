@@ -1,16 +1,23 @@
 import React, { FunctionComponent } from 'react';
-import { Stack, VStack, Flex, Button } from '@chakra-ui/react'
+import { Stack, VStack, Flex, Text, Link, Image } from '@chakra-ui/react'
+import Overview from './Overview';
+import Why from './Why';
+import Today from './Today';
+import Ecosystem from './Ecosystem';
 
 const Dashboard: FunctionComponent = (props) => {
   return (
-    <VStack 
-      mt={'15px'} 
-      px={{sm:'10px', md:'20px', lg:'110px'}}
+    <Flex
+      direction='column'
+      mt={'160px'} 
+      px={{base:'20px', lg:'190px'}}
       w={'100%'}
-      spacing={'53px'}
     >
-      <h1>hello</h1>
-    </VStack>
+      <Overview />
+      <Why />
+      <Today />
+      <Ecosystem />
+    </Flex>
   );
 }
 export default Dashboard;

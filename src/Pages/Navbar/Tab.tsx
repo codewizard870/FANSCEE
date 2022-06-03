@@ -39,9 +39,6 @@ const Tab: FunctionComponent<Props> = ({id, children}) => {
         backgroundSize='0% 1px'
         color='#000'
         transition='background-size .3s cubic-bezier(.465,.183,.153,.946)'
-        transitionDuration='3s'
-        transitionProperty='backgrond-size, color'
-        transitionTimingFunction='ease-in-out'
         _hover={{backgroundSize:'100% 1px', color:'rgb(0, 75, 224)'}}
       >
         {children}
