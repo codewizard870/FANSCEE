@@ -26,6 +26,14 @@ const theme = extendTheme(
         }
       },
     },
+    textStyles: { 
+      primary: {
+          fontFamily: '"Raleway","Arial","sans-serif"'
+      },
+      secondary: {
+          fontFamily: '"Lato","Arial","sans-serif"'
+      },
+    },
   },
 )
 

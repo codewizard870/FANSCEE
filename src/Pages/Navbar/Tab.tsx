@@ -1,6 +1,6 @@
 import React, { FunctionComponent } from 'react';
 import { useNavigate } from "react-router-dom";
-import { Flex, Text } from '@chakra-ui/react'
+import { Flex, Text, Link } from '@chakra-ui/react'
 import {useStore, ActionKind} from '../../store';
 
 interface Props {
@@ -21,17 +21,31 @@ const Tab: FunctionComponent<Props> = ({id, children}) => {
   }
   return (
     <Flex
-      fontSize={'20px'}
-      fontWeight={'800'}
-      height={'53px'}
+      fontSize={'13px'}
+      textStyle='secondary'
+      height={'28px'}
       justify={'center'}
       align={'center'}
-      rounded={'15px'}
       cursor={'pointer'}
-      p={'18px'}
+      px={'18px'}
       onClick={() => {clickTab()}}
+      letterSpacing='3.2px'
+
     >
-      <Text color={selected? 'black' : '#666666'}>{children}</Text>
+      <Link 
+        backgroundImage='linear-gradient(to right, rgb(0, 75, 224), rgb(0, 75, 224))'
+        backgroundPosition='50% 99%'
+        backgroundRepeat='no-repeat'
+        backgroundSize='0% 1px'
+        color='#000'
+        transition='background-size .3s cubic-bezier(.465,.183,.153,.946)'
+        transitionDuration='3s'
+        transitionProperty='backgrond-size, color'
+        transitionTimingFunction='ease-in-out'
+        _hover={{backgroundSize:'100% 1px', color:'rgb(0, 75, 224)'}}
+      >
+        {children}
+      </Link>
     </Flex>
   );
 }

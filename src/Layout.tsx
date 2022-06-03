@@ -12,23 +12,22 @@ declare let window: any;
 const Layout = () => {
   return (
     <Flex
-      background={'gray'}
+      background={'rgb(240, 240, 243)'}
       justify={'center'}
       w={'100%'}
     >
-      <VStack
-        fontFamily={'SF UI Text'}
-        fontStyle={'normal'}
-        letterSpacing={'-0.06em'}
-        spacing={'10px'}
-        color={'white'}
-        maxWidth={'1440px'}
+      <Flex
+        direction='column'
+        textStyle='primary'
+        fontWeight='400'
+        color={'#121212'}
+        // maxWidth={'1440px'}
         w = {'100%'}
       >
         <Navbar />
         <Outlet />
         <Footer />
-      </VStack>
+      </Flex>
     </Flex>
   )
 };
