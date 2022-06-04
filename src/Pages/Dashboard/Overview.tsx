@@ -47,7 +47,7 @@ const Overview: FunctionComponent = (props) => {
         </Link>
       </VStack>
       <Flex w='530px' display={{base:'none', lg:'flex'}}>
-        <Image src='./radar.svg' w='534px' position='absolute'  animation='spin 12s linear infinite'/>
+        <Image src='./Radar.svg' w='534px' position='absolute'  animation='spin 12s linear infinite'/>
       </Flex>
     </Flex>
   );
