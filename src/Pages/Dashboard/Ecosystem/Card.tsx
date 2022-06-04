@@ -17,7 +17,7 @@ const Card: FunctionComponent<Props> = ({item}) => {
       pt='28px'
       pb='20px'
       justify={'space-between'}
-
+      data-aos="fade-up"
       className='outerShadow'
     >
       <Flex w='100%' direction='column' align='baseline'>

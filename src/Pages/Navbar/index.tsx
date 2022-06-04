@@ -1,10 +1,13 @@
 import React, { FunctionComponent } from 'react';
 import { VStack, HStack, Flex, Text, Image, Slide, Box, useDisclosure } from '@chakra-ui/react'
 import {MdOutlineMenu, MdClose} from "react-icons/md";
+import { useNavigate } from "react-router-dom";
 import Tab from './Tab'
 
 const Navbar: FunctionComponent = (props) => {
   const { isOpen, onToggle } = useDisclosure();
+  const navigate = useNavigate();
+
   return (
     <Flex
       direction={'row'}
@@ -15,7 +18,7 @@ const Navbar: FunctionComponent = (props) => {
       justify={'space-between'}
       align={'center'}
     >
-      <Image src='./Fanscee-01.png' w='130px' />
+      <Image src='./Fanscee-01.png' w='130px' onClick={()=> navigate("/")}/>
       <Flex
         direction='row'
         display={{base:'none', lg:'flex'}}

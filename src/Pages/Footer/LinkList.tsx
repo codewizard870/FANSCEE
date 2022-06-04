@@ -20,11 +20,19 @@ const LinkList: FunctionComponent<Props> = (props) => {
       </Text>
       <VStack mt='30px' spacing='20px' align='baseline'>
         {props.list.map((item: any, index: any) => (
-          <Link href={item.href}>
+          <Link 
+            href={item.href}
+            backgroundImage='linear-gradient(to right, rgb(0, 75, 224), rgb(0, 75, 224))'
+            backgroundPosition='50% 99%'
+            backgroundRepeat='no-repeat'
+            backgroundSize='0% 1px'
+            color='#0006'
+            transition='background-size .3s cubic-bezier(.465,.183,.153,.946)'
+            _hover={{backgroundSize:'100% 1px', color:'rgb(0, 75, 224)'}}
+          >
             <Text 
               fontSize='13px'
               textStyle='secondary'
-              color='#0006'
             >
               {item.label}
             </Text>

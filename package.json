@@ -27,6 +27,7 @@
     "@types/recharts": "^1.8.23",
     "@types/secp256k1": "^4.0.3",
     "@types/semver": "^7.3.9",
+    "aos": "^2.3.4",
     "axios": "^0.26.1",
     "buffer": "^6.0.3",
     "chart.js": "^3.7.1",
@@ -71,6 +72,7 @@
     ]
   },
   "devDependencies": {
+    "@types/aos": "^3.0.4",
     "@types/styled-components": "^5.1.24"
   }
 }

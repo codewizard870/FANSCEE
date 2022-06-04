@@ -13,6 +13,7 @@ const Ecosystem: FunctionComponent = (props) => {
         mt='200px'
         w='100%'
         fontWeight={'600'}
+        data-aos="fade-up"
       >
         A growing ecosystem
       </Text>
@@ -20,6 +21,7 @@ const Ecosystem: FunctionComponent = (props) => {
         fontSize={{base:'20px', lg:'28px'}}
         mt='15px'
         w='100%'
+        data-aos="fade-up"
       >
         Who's building on Fanscee
       </Text>
@@ -39,25 +41,29 @@ const Ecosystem: FunctionComponent = (props) => {
         _hover={{textDecoration:'none'}}
         mt='100px'
       >
-        <Flex w='100%' justify={'center'}>
-        <Flex
-          w={{base:'100%', lg:'380px'}}
-          h='80px'
-          bg='gray'
+        <Flex 
+          w='100%' 
           justify={'center'}
-          align='center'
-          position='relative'
-          className="innerShadow outerShadow outerShadowHover"
+          data-aos="fade-up"
         >
-          <Text 
-            fontSize='15px'
-            color='primary'
-            textStyle='secondary'
-            letterSpacing={'2.8px'}
+          <Flex
+            w={{base:'100%', lg:'380px'}}
+            h='80px'
+            bg='gray'
+            justify={'center'}
+            align='center'
+            position='relative'
+            className="innerShadow outerShadow outerShadowHover"
           >
-             Explore the Fanscee ecosystem
-          </Text>
-        </Flex>
+            <Text 
+              fontSize='15px'
+              color='primary'
+              textStyle='secondary'
+              letterSpacing={'2.8px'}
+            >
+              Explore the Fanscee ecosystem
+            </Text>
+          </Flex>
         </Flex>
       </Link>
     </Flex>

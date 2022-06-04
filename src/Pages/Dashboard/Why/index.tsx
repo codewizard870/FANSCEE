@@ -15,6 +15,7 @@ const Why: FunctionComponent = (props) => {
         mb='60px'
         w='100%'
         fontWeight={'600'}
+        data-aos="fade-up"
       >
         Why Fanscee?
       </Text>

@@ -14,6 +14,7 @@ const Today: FunctionComponent = (props) => {
         mt='200px'
         w='100%'
         fontWeight={'600'}
+        data-aos="fade-up"
       >
         Fanscee Today
       </Text>
@@ -21,6 +22,7 @@ const Today: FunctionComponent = (props) => {
         fontSize={{base:'20px', lg:'28px'}}
         mt='15px'
         w='100%'
+        data-aos="fade-up"
       >
         The latest network statistics
       </Text>
@@ -30,7 +32,13 @@ const Today: FunctionComponent = (props) => {
         justify='space-between'
         mt='55px'
       >
-        <Image src='./Path1.svg' position='absolute' left='0px' display={{base:'none', lg:'block'}}/>
+        <Image 
+          src='./Path1.svg' 
+          position='absolute' 
+          left='0px' 
+          display={{base:'none', lg:'block'}} 
+          data-aos="fade-up"
+        />
         <Card 
           title='64'
           description='Global Rank'

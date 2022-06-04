@@ -34,7 +34,29 @@ const Footer: FunctionComponent = (props) => {
           list={socials}
         />
       </Flex>
-      <Divider orientation='horizontal' />
+      <Divider orientation='horizontal' mt='50px' />
+      <Stack
+        direction={{base: 'column', lg: 'row'}}
+        w='100%'
+        mt='50px'
+        mb='100px'
+        align={{base: 'center', lg:'baseline'}}
+        spacing='20px'
+      >
+        {policy.map((item, index) => (
+          <Link
+            href = {item.href}
+            color='#0006'
+            _hover={{color:'rgb(0, 75, 224)'}}
+          >
+            <Text
+              fontSize='14px'
+            >
+              {item.label}
+            </Text>
+          </Link>
+        ))}
+      </Stack>
     </Flex>
   );
 }
@@ -101,6 +123,24 @@ const socials= [
   },
   {
     label: "MEDIUM", 
+    href: ''
+  },
+];
+const policy = [
+  { 
+    label: "@2022 Fanscee",
+    href: ''
+  },
+  { 
+    label: "Privacy Policy",
+    href: ''
+  },
+  { 
+    label: "Cookie Policy", 
+    href: ''
+  },
+  {
+    label: "Terms of Service", 
     href: ''
   },
 ];

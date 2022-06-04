@@ -13,6 +13,7 @@ const Card: FunctionComponent<Props> = (props) => {
       direction='column'
       mr={{base:'10px', lg:'40px'}}
       zIndex={'2'}
+      data-aos="fade-up"
     >
       <Flex
         rounded='50%'

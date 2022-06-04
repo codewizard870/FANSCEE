@@ -13,6 +13,7 @@ const Start: FunctionComponent = (props) => {
         mt='200px'
         w='100%'
         fontWeight={'600'}
+        data-aos="fade-up"
       >
         So, how to start with Fanscee?
       </Text>
@@ -21,6 +22,8 @@ const Start: FunctionComponent = (props) => {
         flexWrap={'wrap'}
         justify='space-between'
         mt='55px'
+        data-aos="fade-up"
+        data-aos-once="false"
       >
         {data.map((item, index) => (
           <Card

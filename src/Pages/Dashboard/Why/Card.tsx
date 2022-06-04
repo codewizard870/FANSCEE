@@ -16,6 +16,7 @@ const Card: FunctionComponent<Props> = (props) => {
       px='24px'
       py='50px'
       className='outerShadow'
+      data-aos="fade-up"
     >
       <Text
         textStyle='secondary'

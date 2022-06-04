@@ -7,9 +7,15 @@ import { useStore } from './store';
 import Navbar from './Pages/Navbar'
 import Footer from "./Pages/Footer";
 
+import AOS from 'aos'
+import 'aos/dist/aos.css' // You can also use <link> for styles
+
 declare let window: any;
 
 const Layout = () => {
+  useEffect(() => {
+    AOS.init({ duration: 300 })
+  }, [])
   return (
     <Flex
       background={'rgb(240, 240, 243)'}

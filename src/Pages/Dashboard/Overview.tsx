@@ -5,6 +5,7 @@ const Overview: FunctionComponent = (props) => {
   return (
     <Flex
       w={'100%'}
+
     >
       <VStack 
         w={{base:'100%', lg:'75%'}} 
@@ -16,6 +17,7 @@ const Overview: FunctionComponent = (props) => {
           fontSize={{base:'24px', lg:'42px'}}
           mb='44px'
           w='100%'
+          data-aos="fade-up"
         >
           <b>Fanscee</b> is a community-based stack of decentralized open-source technologies to build scalable, user-friendly apps
         </Text>
@@ -31,6 +33,7 @@ const Overview: FunctionComponent = (props) => {
             align='center'
             position='relative'
             className="innerShadow outerShadow outerShadowHover"
+            data-aos="fade-up"
           >
             <Text 
               fontSize='14px'
