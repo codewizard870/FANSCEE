@@ -5,7 +5,7 @@ const Overview: FunctionComponent = (props) => {
   return (
     <Flex
       w={'100%'}
-
+      mt={{base:'100px', lg:'160px'} }
     >
       <VStack 
         w={{base:'100%', lg:'75%'}} 

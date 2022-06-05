@@ -18,12 +18,12 @@ const Navbar: FunctionComponent = (props) => {
       justify={'space-between'}
       align={'center'}
     >
-      <Image src='./Fanscee-01.png' w='130px' onClick={()=> navigate("/")}/>
+      <Image src='./Fanscee-01.png' w='130px' onClick={()=> navigate("/")} cursor='pointer'/>
       <Flex
         direction='row'
         display={{base:'none', lg:'flex'}}
       >
-        <Tab id={'dashboard'} >ABOUT FANSCEE</Tab>
+        <Tab id={'about'} >ABOUT FANSCEE</Tab>
         <Tab id={'build'} >BUILD</Tab>
         <Tab id={'get'} >GET FANSCEE</Tab>
         <Tab id={'roadmap'} >ROADMAP  🌊 (1 ➝ 2)</Tab>
@@ -50,7 +50,7 @@ const Navbar: FunctionComponent = (props) => {
             <MdClose size='50px' />
           </Flex>
           <VStack spacing='20px' align='baseline' >
-            <Tab id={''} >ABOUT FANSCEE</Tab>
+            <Tab id={'about'} >ABOUT FANSCEE</Tab>
             <Tab id={'build'} >BUILD</Tab>
             <Tab id={'get'} >GET FANSCEE</Tab>
             <Tab id={'roadmap'} >ROADMAP  🌊 (1 ➝ 2)</Tab>

@@ -10,8 +10,7 @@ const Dashboard: FunctionComponent = (props) => {
   return (
     <Flex
       direction='column'
-      mt={'160px'} 
-      px={{base:'20px', lg:'190px'}}
+      px={{base:'40px', lg:'190px'}}
       w={'100%'}
     >
       <Overview />

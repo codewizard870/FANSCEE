@@ -4,6 +4,8 @@ import { VStack, Flex, useDisclosure, useEventListenerMap } from '@chakra-ui/rea
 
 import Layout from './Layout';
 import Dashboard from './Pages/Dashboard'
+import About from './Pages/About'
+import GetFanscee from './Pages/GetFanscee'
 
 declare let document: any;
 
@@ -21,6 +23,8 @@ function App() {
           <Routes>
             <Route path="/" element={<Layout />}>
               <Route index element={<Dashboard />} />
+              <Route path="/about" element={<About />} />
+              <Route path="/get" element={<GetFanscee />} />
               <Route path="*" element={"404"} />
             </Route>
           </Routes>

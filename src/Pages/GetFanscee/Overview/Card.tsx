@@ -9,7 +9,7 @@ const Card: FunctionComponent<Props> = (props) => {
   return (
     <Flex
       mt='20px'
-      w={{base:'140px', lg:'160px'}}
+      w='240px'
       direction='column'
       mr={{base:'10px', lg:'40px'}}
       zIndex={'2'}
@@ -18,14 +18,14 @@ const Card: FunctionComponent<Props> = (props) => {
       <Flex
         rounded='50%'
         className='outerShadow'
-        w='100%'
-        h={{base:'140px', lg:'160px'}}
+        w='240px'
+        h='240px'
         justify='center'
         align='center'
       >
         <Text
           textStyle='secondary'
-          fontSize='44px'
+          fontSize='70px'
           fontWeight={'400'}
           color='primary'
         >
@@ -34,7 +34,7 @@ const Card: FunctionComponent<Props> = (props) => {
       </Flex>
       <Text
         mt='28px'
-        fontSize='20px'
+        fontSize='28px'
         textAlign={'center'}
       >
         {props.description}
