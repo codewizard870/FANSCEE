@@ -4,6 +4,22 @@ import {MdOutlineMenu, MdClose} from "react-icons/md";
 import { useNavigate } from "react-router-dom";
 import Tab from './Tab'
 
+
+const TabList = () => {
+  return (
+    <>
+        <Tab id={'about'} >ABOUT FANSCEE</Tab>
+        <Tab id={'build'} >BUILD</Tab>
+        <Tab id={'get'} >GET FANSCEE</Tab>
+        <Tab 
+          id={'roadmap'}
+          href='https://fanscee-roadmap.notion.site/fanscee-roadmap/Fanscee-is-Transforming-1-2-f2700b5d1829456e857dd6305ba25ae9'
+        >
+          ROADMAP  🌊 (1 ➝ 2)
+        </Tab>
+    </>
+  )
+}
 const Navbar: FunctionComponent = (props) => {
   const { isOpen, onToggle } = useDisclosure();
   const navigate = useNavigate();
@@ -23,10 +39,7 @@ const Navbar: FunctionComponent = (props) => {
         direction='row'
         display={{base:'none', lg:'flex'}}
       >
-        <Tab id={'about'} >ABOUT FANSCEE</Tab>
-        <Tab id={'build'} >BUILD</Tab>
-        <Tab id={'get'} >GET FANSCEE</Tab>
-        <Tab id={'roadmap'} >ROADMAP  🌊 (1 ➝ 2)</Tab>
+        <TabList />
       </Flex>
       <HStack
         display={{base:'flex', lg:'none'}}
@@ -50,10 +63,7 @@ const Navbar: FunctionComponent = (props) => {
             <MdClose size='50px' />
           </Flex>
           <VStack spacing='20px' align='baseline' >
-            <Tab id={'about'} >ABOUT FANSCEE</Tab>
-            <Tab id={'build'} >BUILD</Tab>
-            <Tab id={'get'} >GET FANSCEE</Tab>
-            <Tab id={'roadmap'} >ROADMAP  🌊 (1 ➝ 2)</Tab>
+            <TabList />
           </VStack>
         </Box>
       </Slide>

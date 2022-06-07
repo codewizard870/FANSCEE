@@ -5,20 +5,24 @@ import {useStore, ActionKind} from '../../store';
 
 interface Props {
   id: string,
+  href?: string,
 }
-const Tab: FunctionComponent<Props> = ({id, children}) => {
+const Tab: FunctionComponent<Props> = ({id, href, children}) => {
   const {state, dispatch} = useStore();
   const selected = id == state.tab;
   const navigate = useNavigate();
 
   const clickTab = () => {
     dispatch({type: ActionKind.setTab, payload: id});
-
-    if(id=='bridge')
-      window.open('https://rainbowbridge.app/transfer', '_blank')?.focus();
+console.log(id)
+console.log(href)
+    if(href != undefined){
+      window.open(href, '_blank')?.focus();
+    }
     else
       navigate("/" + id);
   }
+  
   return (
     <Flex
       fontSize={'13px'}
@@ -28,9 +32,8 @@ const Tab: FunctionComponent<Props> = ({id, children}) => {
       align={'center'}
       cursor={'pointer'}
       px={'18px'}
-      onClick={() => {clickTab()}}
+      onClick={() => clickTab()}
       letterSpacing='3.2px'
-
     >
       <Link 
         backgroundImage='linear-gradient(to right, rgb(0, 75, 224), rgb(0, 75, 224))'
