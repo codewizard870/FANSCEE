@@ -9,7 +9,9 @@ const TabList = () => {
   return (
     <>
         <Tab id={'about'} >ABOUT FANSCEE</Tab>
-        <Tab id={'build'} >BUILD</Tab>
+        <Tab id={'build'} 
+          href='https://docs.waves.tech/en/'
+        >BUILD</Tab>
         <Tab id={'get'} >GET FANSCEE</Tab>
         <Tab 
           id={'roadmap'}
