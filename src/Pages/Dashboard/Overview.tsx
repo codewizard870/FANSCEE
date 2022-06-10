@@ -5,16 +5,16 @@ const Overview: FunctionComponent = (props) => {
   return (
     <Flex
       w={'100%'}
-      mt={{base:'100px', lg:'160px'} }
+      mt={{ base: '100px', lg: '160px' }}
     >
-      <VStack 
-        w={{base:'100%', lg:'75%'}} 
-        minW={{base:'100%', lg:'75%'}} 
-        spacing='50px' 
+      <VStack
+        w={{ base: '100%', lg: '75%' }}
+        minW={{ base: '100%', lg: '75%' }}
+        spacing='50px'
         align='baseline'
       >
         <Text
-          fontSize={{base:'24px', lg:'42px'}}
+          fontSize={{ base: '24px', lg: '42px' }}
           mb='44px'
           w='100%'
           data-aos="fade-up"
@@ -22,11 +22,12 @@ const Overview: FunctionComponent = (props) => {
           <b>Fanscee</b> is a community-based stack of decentralized open-source technologies to build scalable, user-friendly apps
         </Text>
         <Link
-          _hover={{textDecoration:'none'}}
-          w='100%'
+          href="/startbuilding"
+          _hover={{ textDecoration: 'none' }}
+          _focus={{ boxShadow: 'none' }}
         >
           <Flex
-            w={{base:'100%', lg:'380px'}}
+            w={{ base: '100%', lg: '380px' }}
             h='80px'
             bg='gray'
             justify={'center'}
@@ -35,7 +36,7 @@ const Overview: FunctionComponent = (props) => {
             className="innerShadow outerShadow outerShadowHover"
             data-aos="fade-up"
           >
-            <Text 
+            <Text
               fontSize='14px'
               color='primary'
               textStyle='secondary'
@@ -46,8 +47,8 @@ const Overview: FunctionComponent = (props) => {
           </Flex>
         </Link>
       </VStack>
-      <Flex w='530px' display={{base:'none', lg:'flex'}}>
-        <Image src='./Radar.svg' w='534px' position='absolute'  animation='spin 12s linear infinite'/>
+      <Flex w='530px' display={{ base: 'none', lg: 'flex' }}>
+        <Image src='./Radar.svg' w='534px' position='absolute' animation='spin 12s linear infinite' />
       </Flex>
     </Flex>
   );

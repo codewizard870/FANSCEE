@@ -14,8 +14,7 @@ const Tab: FunctionComponent<Props> = ({id, href, children}) => {
 
   const clickTab = () => {
     dispatch({type: ActionKind.setTab, payload: id});
-console.log(id)
-console.log(href)
+
     if(href != undefined){
       window.open(href, '_blank')?.focus();
     }

@@ -49,7 +49,7 @@ export default WhereToBuy;
 const decentralized_items: any[] = [
   {
     label: "Fanscee Exchange",
-    href: "",
+    href: "https://waves.exchange/",
     img: './Fanscee-02.png'
   }
 ];
@@ -57,27 +57,27 @@ const decentralized_items: any[] = [
 const centralized_items: any[] = [
   {
     label: "Binance",
-    href: "",
+    href: "https://www.binance.com/en/trade/WAVES_USDT",
     img: './Exchanges/binance-icon.svg'
   },
   {
     label: "Okex",
-    href: "",
+    href: "https://www.okx.com/",
     img: './Exchanges/okex-icon.svg'
   },
   {
     label: "Bithumb",
-    href: "",
+    href: "https://m.bithumb.com/trade/order/WAVES_KRW",
     img: './Exchanges/bithumb-icon.svg'
   },
   {
     label: "Kraken",
-    href: "",
+    href: "https://trade.kraken.com/ru-ru/charts/KRAKEN:WAVES-USD",
     img: './Exchanges/kraken-icon.svg'
   },
   {
     label: "Huobi",
-    href: "",
+    href: "https://www.huobi.com/ru-ru/exchange/waves_usdt/",
     img: './Exchanges/huobi-icon.svg'
   },
 ];
@@ -85,37 +85,37 @@ const centralized_items: any[] = [
 const wallets_items: any[] = [
   {
     label: "Keeper",
-    href: "",
+    href: "https://keeper-wallet.app/",
     img: './Wallets/cryptocom-icon-2x.png'
   },
   {
     label: "Trust Wallet",
-    href: "",
+    href: "https://trustwallet.com/ru/waves-wallet/",
     img: './Wallets/trust-wallet-icon-2x.png'
   },
   {
     label: "Ledger",
-    href: "",
+    href: "https://www.ledger.com/waves-wallet",
     img: './Wallets/guarda-icon-2x.png'
   },
   {
     label: "Guarda",
-    href: "",
+    href: "https://guarda.com/coins/waves-wallet/",
     img: './Wallets/keeper-icon.svg'
   },
   {
     label: "Crypto.com",
-    href: "",
+    href: "https://crypto.com/defi-wallet",
     img: './Wallets/ledger-icon.svg'
   },
   {
     label: "Wirex",
-    href: "",
+    href: "https://wirexapp.com/global",
     img: './Wallets/wirex-icon-2x.png'
   },
   {
     label: "Enno Wallet",
-    href: "",
+    href: "https://enno.link/KwM5b",
     img: './Wallets/enno-icon.png'
   },
 ];

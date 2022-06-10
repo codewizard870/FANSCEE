@@ -37,7 +37,7 @@ const Ecosystem: FunctionComponent = (props) => {
           />
         ))}
       </Flex>
-      <Link
+      {/* <Link
         _hover={{textDecoration:'none'}}
         mt='100px'
       >
@@ -65,7 +65,7 @@ const Ecosystem: FunctionComponent = (props) => {
             </Text>
           </Flex>
         </Flex>
-      </Link>
+      </Link> */}
     </Flex>
   );
 }

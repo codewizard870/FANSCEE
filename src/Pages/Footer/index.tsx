@@ -21,10 +21,10 @@ const Footer: FunctionComponent = (props) => {
           title='Use Fanscee'
           list={useFanscee}
         />
-        <LinkList
+        {/* <LinkList
           title='Build'
           list={build}
-        />
+        /> */}
         <LinkList
           title='Ecosystem'
           list={ecosystem}
@@ -46,6 +46,7 @@ const Footer: FunctionComponent = (props) => {
         {policy.map((item, index) => (
           <Link
             href = {item.href}
+            target="_blank"
             color='#0006'
             _hover={{color:'rgb(0, 75, 224)'}}
           >
@@ -65,65 +66,65 @@ export default Footer;
 const useFanscee = [ 
   { 
     label: "ABOUT FANSCEE",
-    href: ''
+    href: '/about'
   },
   { 
     label: "GET FANSCEE", 
-    href: ''
+    href: '/get'
   },
   {
     label: "EXPLORER", 
-    href: ''
+    href: '/'
   },
   {
     label:"🌊 (1 ➝ 2)" ,
-    href: ''
+    href: 'https://fanscee-roadmap.notion.site/fanscee-roadmap/Fanscee-is-Transforming-1-2-f2700b5d1829456e857dd6305ba25ae9'
   }
 ];
-const build = [ 
-  { 
-    label: "DOCUMENTATION",
-    href: ''
-  },
-  { 
-    label: "GITHUB", 
-    href: ''
-  },
-  {
-    label: "INCUBATOR", 
-    href: ''
-  },
-  {
-    label:"GRANTS" ,
-    href: ''
-  }
-];
+// const build = [ 
+//   { 
+//     label: "DOCUMENTATION",
+//     href: ''
+//   },
+//   { 
+//     label: "GITHUB", 
+//     href: ''
+//   },
+//   {
+//     label: "INCUBATOR", 
+//     href: ''
+//   },
+//   {
+//     label:"GRANTS" ,
+//     href: ''
+//   }
+// ];
 const ecosystem= [
   { 
     label: "DAO",
-    href: ''
+    href: 'https://wavesassociation.org/'
   },
   { 
     label: "CONTACT", 
-    href: ''
+    href: 'mailto:press@waves.tech'
   },
   {
     label: "LABS", 
-    href: ''
+    href: 'https://waveslabs.com/'
   },
 ];
 const socials= [
   { 
     label: "TWITTER",
-    href: ''
+    href: 'https://twitter.com/wavesprotocol'
   },
   { 
     label: "TELEGRAM", 
-    href: ''
+    href: 'https://t.me/wavesnews'
   },
   {
     label: "MEDIUM", 
-    href: ''
+    href: 'https://medium.com/wavesprotocol'
   },
 ];
 const policy = [
@@ -133,14 +134,14 @@ const policy = [
   },
   { 
     label: "Privacy Policy",
-    href: ''
+    href: 'https://waves.tech/docs/privacy-policy'
   },
   { 
     label: "Cookie Policy", 
-    href: ''
+    href: 'https://waves.tech/docs/cookie-policy'
   },
   {
     label: "Terms of Service", 
-    href: ''
+    href: 'https://waves.tech/docs/terms'
   },
 ];

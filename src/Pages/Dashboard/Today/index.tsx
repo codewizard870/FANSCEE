@@ -82,7 +82,9 @@ const Today: FunctionComponent = (props) => {
         />
       </Flex>
       <Link
+        href= "/get"
         _hover={{textDecoration:'none'}}
+        _focus={{boxShadow:'none'}}
         mt='100px'
       >
         <Flex w='100%' justify={'center'}>

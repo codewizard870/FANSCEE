@@ -6,6 +6,8 @@ import Layout from './Layout';
 import Dashboard from './Pages/Dashboard'
 import About from './Pages/About'
 import GetFanscee from './Pages/GetFanscee'
+import StartBuilding from './Pages/StartBuilding'
+import Start from './Pages/Dashboard/Start';
 
 declare let document: any;
 
@@ -25,6 +27,7 @@ function App() {
               <Route index element={<Dashboard />} />
               <Route path="/about" element={<About />} />
               <Route path="/get" element={<GetFanscee />} />
+              <Route path="/startbuilding" element={<StartBuilding />} />
               <Route path="*" element={"404"} />
             </Route>
           </Routes>

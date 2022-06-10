@@ -51,6 +51,8 @@ const Card: FunctionComponent<Props> = ({ title, items, direction }) => {
                   color='#0006'
                   transition='background-size .3s cubic-bezier(.465,.183,.153,.946)'
                   _hover={{ backgroundSize: '100% 1px', color: 'rgb(0, 75, 224)' }}
+                  _focus={{ boxShadow: 'none' }}
+                  target='_blank'
                 >
                   <Text
                     fontSize={{ base: '16px', lg: '20px' }}

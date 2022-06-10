@@ -1,5 +1,5 @@
 import React, { FunctionComponent } from 'react';
-import { Stack, VStack, Flex, Text, Link, Image } from '@chakra-ui/react'
+import { Stack, HStack, Flex, Text, Link, Image } from '@chakra-ui/react'
 import Card from './Card'
 
 const Start: FunctionComponent = (props) => {
@@ -20,7 +20,7 @@ const Start: FunctionComponent = (props) => {
       <Flex
         w='100%'
         flexWrap={'wrap'}
-        justify='space-between'
+        // justify='space-between'
         mt='55px'
         data-aos="fade-up"
         data-aos-once="false"
@@ -42,27 +42,29 @@ const data = [
     subTitle: "ON FANSCEE",
     description: 'Check documentation to start building your first decentralized project',
     url: 'Start building ->',
-    href: ''
+    href: '/startbuilding'
   },
-  {
-    title: "APPLY",
-    subTitle: "FOR GRANTS",
-    description: 'Learn how Fanscee Association can help you get your idea off the ground',
-    url: 'Get gramts ->',
-    href: ''
-  },
+  // {
+  //   title: "APPLY",
+  //   subTitle: "FOR GRANTS",
+  //   description: 'Learn how Fanscee Association can help you get your idea off the ground',
+  //   url: 'Get gramts ->',
+  //   href: ''
+  // },
   {
     title: "JOIN",
     subTitle: "INCUBATOR",
     description: 'Find funding, friends, and mentorship',
     url: 'Join the incubator ->',
-    href: ''
+    href: 'mailto:press@waves.tech'
   },
   {
     title: "JOIN",
     subTitle: "OUR COMMUNITY",
     description: 'Need more support, please join our community',
-    url: 'Telegram Twitter',
-    href: ''
+    url: 'Telegram',
+    href: 'https://t.me/wavesnews',
+    url2: 'Twitter',
+    href2: 'https://twitter.com/fanscee?s=21&t=wSLbcuKPjsC-hKAzZhkGNQ',
   },
 ]

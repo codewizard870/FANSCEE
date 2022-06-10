@@ -13,6 +13,7 @@ const Card: FunctionComponent<Props> = ({item}) => {
       h='351px'
       direction='column'
       mt='20px'
+      mr={{base:'0px', lg:'50px'}}
       px='20px'
       pt='50px'
       pb='38px'
@@ -48,7 +49,6 @@ const Card: FunctionComponent<Props> = ({item}) => {
         </Text>
       </Flex>
       <Flex
-        justify={'space-between'}
         align='center'
         w='100%'
       >
@@ -60,6 +60,16 @@ const Card: FunctionComponent<Props> = ({item}) => {
             {item.url}
           </Text>
         </Link>
+        {item.url2 && 
+          <Link href={item.href2} ml="10px">
+            <Text
+              fontSize='20px'
+              color="primary"
+            >
+              {item.url2}
+            </Text>
+          </Link>
+        }
       </Flex>
     </Flex>
   );
